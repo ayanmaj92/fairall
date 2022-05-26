@@ -1,0 +1,21 @@
+optimizer:
+  name: adam
+  params:
+    learning_rate: 0.001
+
+model:
+  name: cvae
+  params1:
+    phase1-ckpt: # leave empty for None or paste here model with the entire model path
+  params:
+    L: 50 # samples of Z to evaluate ELBO
+    K: 100 # samples for MC estimation of unsupervised KL
+    hidden_size: 64
+    latent_size: 2 # latent dimension of z
+    conditional: True # conditional VAE
+    alpha: 10 # factor for classifier loss
+    beta: 0.7 # annealing factor for KL
+    costs: 0.5 # costs of positive decision
+    learn_policy: FZ # 'QXS', 'PZS', 'FZ', 'NA'
+    fz_method: DEC # 'CLF', 'DEC', 'LAB' (IPS)
+    loss_function: loss_ours

@@ -1,0 +1,8 @@
+dataset:
+  name: meps
+  params1:
+    std: True # Standardize data (use Lipschitz instead)
+  params2: # Parameters we cross validate
+    batch_size: 256
+    init_policy: HARSH
+    percent: 0.3 # percentage labeled datapoints, if initial policy RANdom

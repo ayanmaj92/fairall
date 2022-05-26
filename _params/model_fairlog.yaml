@@ -1,0 +1,30 @@
+optimizer:
+  name: adam
+  params:
+    learning_rate: 0.001
+
+model:
+  name: sscvae
+  params:
+    L: 50 #NA
+    K: 100 #NA
+    latent_size: 2 #NA
+    h_dim_list_clf: [64, 64]
+    h_dim_list_enc: [] #NA
+    h_dim_list_dec: [] #NA
+    act_name: relu #activation function
+    drop_rate_clf: 0.2 #dropout rate
+    conditional: True #NA
+    alpha: 1 #constant multiplied with clf loss
+    beta: 0.7 #NA
+    lambda: 3 #constant multiplied with fairness constraint (for fairlog, 0 to make unfairlog)
+    costs: 0.5 #costs of positive decision
+    learn_policy: QXS
+    fz_method:  #dont learn FZ, leave empty as none
+    pol_sampler: LOG
+    aggregated: False
+    loss_function: loss_fairlog #only learns classifier (currently unfair)
+    model_type: nn #nn = Neural Net, lr=Logistic Regression (for fairlog)
+    phase1-ckpt: #leave empty for None or paste here model with the entire model path
+
+

@@ -1,0 +1,15 @@
+root_dir: results # Root folder to save the model
+trainer:
+  print_every: 1
+trainer1:
+  training: True #If True, train phase 1
+  epochs: 1200 # Maximum number of epochs to train
+  phase1_samples: #leave like this, we only used this for cross-validation
+trainer2:
+  training: True #If True, train phase 2
+  only_warmup: False #If True, only do warmup phase (this is True only for cross validation)
+  epochs_per_ts: 1 # Number of epochs per time step
+  time_steps: 200 # Number of time steps
+  samples_per_ts: 64 # Number of samples per time step
+  warmup_ts: 50  # How many epochs to do warmup?
+  warmup_samples: 128 # How many samples do we consider as applicants for warmup?

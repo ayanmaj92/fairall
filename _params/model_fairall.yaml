@@ -1,0 +1,28 @@
+optimizer:
+  name: adam
+  params:
+    learning_rate: 0.001
+
+model:
+  name: sscvae
+  params:
+    L: 50 #samples of Z to evaluate ELBO
+    K: 100 #samples for MC estimation of unsupervised KL
+    latent_size: 2 #latent dimension of z
+    h_dim_list_clf: [32, 32, 32]
+    h_dim_list_enc: [64, 64]
+    h_dim_list_dec: [64, 64]
+    act_name: relu #activation function
+    drop_rate_clf: 0.0 #dropout rate
+    conditional: True #conditional VAE
+    alpha: 5 #factor for classifier loss
+    lambda: #NA
+    beta: 0.7 #annealing factor for KL
+    costs: 0.5 #costs of positive decision
+    learn_policy: FZ #'QXS', 'PZS', 'FZ', 'NA'
+    fz_method: DEC #'CLF', 'DEC', 'LAB' (IPS)
+    pol_sampler: LOG  # One of DET, LOG
+    loss_function: loss_fairall
+    model_type:  #leave empty for None, only relevant for fairlog
+    phase1-ckpt: #leave empty for None or paste here model with the entire model path
+    phase1-hparams: #leave empty for None or paste here the yaml file path location

@@ -1,0 +1,8 @@
+dataset:
+  name: compas
+  params1:
+    std: True # Standardize data
+  params2:
+    batch_size: 256
+    init_policy: HARSH
+    percent: 0.3 # percentage labeled datapoints, if initial policy RANdom

@@ -1,0 +1,15 @@
+root_dir: results # Root folder to save the model and TensorBoard data
+trainer:
+  print_every: 1
+trainer1:
+  training: True #If True, train phase 1
+  epochs: 1200 # Maximum number of epochs to train
+  phase1_samples: #leave like this, only in cv phase1 samples, this is edited
+trainer2:
+  training: False #If True, train phase 2
+  only_warmup: False #If True, only do warmup phase (this is done for Phase 2 CV), else False
+  epochs_per_ts: 1 # Number of epochs per time step
+  time_steps: 200 # Number of time steps
+  samples_per_ts: 64 # Number of samples per time step
+  warmup_ts: 50  # How many epochs to do warmup?
+  warmup_samples: 128 # How many samples do we consider as applicants for warmup?

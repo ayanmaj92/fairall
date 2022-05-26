@@ -1,0 +1,10 @@
+dataset:
+  name: SCB_11
+  params1:
+    std: True # Standardize data
+  params2:
+    batch_size: 64 # batch size, this is used in phase 1 learning
+    load_cf: True # also load counterfactual data for analysis
+    util_gnd: True
+    init_policy: HARSH
+    percent: 0.3 # percentage labeled datapoints, if initial policy RANdom
