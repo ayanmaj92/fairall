@@ -1,0 +1,16 @@
+
+.DS_Store
+*.sub
+*.sh
+.idea/*
+_cluster/*
+results/*
+*.file
+*.json
+*.zip
+*.pyc
+
+*.txt
+notebooks/**.pdf
+notebooks/**.pgf
+notebooks/.ipynb_checkpoints/**
