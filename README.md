@@ -28,12 +28,12 @@ conda activate fairall
 
 The repository provides all the datasets that have been used for the experiments in the paper. These include:
 - Synthetic dataset (`datasets/SCB_11/`)
-- COMPAS (`datasets/compas/`)
-- German Credit (`datasets/credit/`)
-- MEPS Health (`datasets/meps/`)
+- [COMPAS](https://github.com/propublica/compas-analysis) (`datasets/compas/`)
+- [German Credit](https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29) (`datasets/credit/`)
+- [MEPS Health](https://meps.ahrq.gov/mepsweb/) (`datasets/meps/`)
 
 The latter 3 datasets are real-world datasets that have been downloaded using 
-[AIF360](https://github.com/Trusted-AI/AIF360).
+[AIF360](https://github.com/Trusted-AI/AIF360). Please see the related licences and use agreements. 
 We have pre-processed the datasets for our compatibility. 
 
 Read [here](./datasets/README.md) for details on the key points regarding 
