@@ -33,8 +33,8 @@ The repository provides all the datasets that have been used for the experiments
 - [MEPS Health](https://meps.ahrq.gov/mepsweb/) (`datasets/meps/`)
 
 The latter 3 datasets are real-world datasets that have been downloaded using 
-[AIF360](https://github.com/Trusted-AI/AIF360). Please see the related licences and use agreements. 
-We have pre-processed the datasets for our compatibility. 
+[AIF360](https://github.com/Trusted-AI/AIF360). Please see the related licences. We also refer to the [user agreement for MEPS](https://github.com/Trusted-AI/AIF360/blob/master/aif360/data/raw/meps/README.md#data-use-agreement). 
+We have pre-processed the datasets for our compatibility and as described in our paper. 
 
 Read [here](./datasets/README.md) for details on the key points regarding 
 *dataset formatting for compatibility.*
@@ -348,10 +348,11 @@ For any queries, please contact `ayanm{at}mpi-sws.org` and `mrateike{at}tue.mpg.
 ## Cite Us
 To cite this work, please cite the main paper
 ```text
-@article{rateike2022don,
-  title={Don't Throw it Away! The Utility of Unlabeled Data in Fair Decision Making},
+@inproceedings{rateike2022don,
+  title={Don’t Throw it Away! The Utility of Unlabeled Data in Fair Decision Making},
   author={Rateike, Miriam and Majumdar, Ayan and Mineeva, Olga and Gummadi, Krishna P and Valera, Isabel},
-  journal={arXiv preprint arXiv:2205.04790},
+  booktitle={2022 ACM Conference on Fairness, Accountability, and Transparency},
+  pages={1421--1433},
   year={2022}
 }
 ```
